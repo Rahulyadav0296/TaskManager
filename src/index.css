@@ -1,0 +1,89 @@
+/* Basic styling for the component */
+.shoppingCart {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.shoppingCart input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.arrayList {
+  position: absolute;
+  width: 100%;
+  max-height: 200px; /* Limiting height for scroll */
+  overflow-y: auto; /* Scroll if the list is too long */
+  border: 1px solid #e0ffe0;
+  background: #15cbb9;
+  font-weight: bold;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.arrayList li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrayList li:hover {
+  background-color: #32cd32;
+}
+
+/* Centering Container for Selected Items */
+.centerContainer {
+  display: flex;
+  justify-content: center; /* Center the child horizontally */
+  margin-top: 20px; /* Space above the selected items container */
+}
+
+/* Styling for selected items */
+.selectedItem {
+  text-align: center;
+  list-style: none;
+  border: 1px solid black;
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #e0ffe0; /* Light green background for the container */
+}
+
+.selectedItem ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.selectedItem ul li.checked {
+  border-left: 5px solid #007bff; /* Add a blue line to the left of checked items */
+}
+
+.selectedItem li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-weight: bold;
+  background-color: #90ee90; /* Light green for each list item */
+  border-radius: 3px;
+}
+
+.selectedItem li button {
+  margin-right: 5px;
+  margin-left: auto; /* Push buttons to the right */
+}
+
+.selectedItem li:hover {
+  background-color: #32cd32; /* Darker green when hovered */
+}
